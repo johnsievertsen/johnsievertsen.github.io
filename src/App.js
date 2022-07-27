@@ -50,7 +50,9 @@ function App() {
         onSearch={handleSearch}
         onChange={handleChange}
         onClickRecent={handleClickRecent}
+        class='header'
       />
+      <div className="blank-space"></div>
       <div className="content-container">
         {url === popEndPoint ?
           <BodyPop articles={data} /> :
